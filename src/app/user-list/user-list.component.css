@@ -1,0 +1,16 @@
+table {
+  border: 10px;
+  border-color: rgb(0, 0, 0);
+  background: rgba(41, 143, 202, 0.7);
+  text-align: center;
+  color: white;
+}
+h2 {
+  margin-left: 600px;
+  margin-right: 600px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background: rgba(93, 95, 91, 0.589);
+  color: white;
+  text-align: center;
+}

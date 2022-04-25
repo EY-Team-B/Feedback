@@ -1,0 +1,29 @@
+<form method="post" action="#action-url">
+  <div class="main">
+    <div class="col-md-6 offset-md-3">
+      <h2>Update Status and Add Feedback</h2>
+        <div class="form-group">
+         <label> <b>Status :</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <select name="status" [(ngModel)]="status.status" id="status">
+            <option *ngFor="let i of status.status">
+              {{ i }}
+            </option>
+          </select>
+          <br><br>
+          <div class="aFeedback">
+            <b>Add Feedback : </b>
+            <br><br>
+          </div>
+          <textarea cols="75" name="commentText" rows="5"
+            placeholder="Please provide your feedback here"></textarea><br>
+          <br>
+          <div class="clear"></div>
+          <input style="background:green;color:#fff;padding:12px;border:0" type="submit" value="Submit your review">
+          &nbsp;&nbsp;
+          <button class="btn btn-danger" (click)="cancel()" style="background: rgb(145, 144, 144);color:white;padding:12px;border:0; border-radius: 6px;">Cancel</button>
+        </div>
+        <br /><br />
+        <br /><br />
+    </div>
+  </div>
+</form>

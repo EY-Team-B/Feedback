@@ -1,0 +1,24 @@
+form {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+button {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.main {
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 40px;
+  color: black;
+  background: rgba(239, 239, 239, 0.521);
+  font: 100;
+}

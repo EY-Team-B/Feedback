@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(18, 18, 22);
+  color: white;
+}
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}

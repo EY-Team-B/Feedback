@@ -1,0 +1,18 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">Recruitment Tracker</a>
+    <button class="btn btn-success my-2 my-sm-0" type="button" (click)="login()"
+      *ngIf="!authenticationService.isLoggedIn(); else elseBlock">Login</button>
+    <ng-template #elseBlock><button class="btn btn-danger my-2 my-sm-0" type="button" (click)="logout()">Logout</button>
+    </ng-template>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<footer class="bg-dark text-center text-white fixed-bottom">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-light" routerLink="/teammates">TEAM-B</a>
+  </div>
+  <!-- Copyright -->
+</footer>

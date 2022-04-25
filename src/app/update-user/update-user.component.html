@@ -1,0 +1,55 @@
+<form>
+  <div class="main">
+    <div class="col-md-6 offset-md-3">
+      <h2>UPDATE USER</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label><b>Employee ID :</b> </label>
+          <input type="text" class="form-control" [(ngModel)]="user.emp_id" id="emp_id" name="emp_id" disabled />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label><b>Name :</b> </label>
+          <input type="text" class="form-control" [(ngModel)]="user.name" id="name" name="name" />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label><b>Department :</b></label>
+          <input type="text" class="form-control" [(ngModel)]="user.dept" id="department" name="depatment" />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label> <b>Email Id :</b></label>
+          <input type="text" class="form-control" [(ngModel)]="user.email" id="email" name="email" />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label> <b>Mobile Number :</b></label>
+          <input type="number" class="form-control" [(ngModel)]="user.mobileNumber" id="mobileNumber"
+            name="mobileNumber" />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label> <b>Designation :</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <select name="designation" [(ngModel)]="user.role" id="designation">
+            <option *ngFor="let i of roles.role">
+              {{ i }}
+            </option>
+          </select>
+        </div>
+        <br />
+
+        <div class="text-center">
+          <button style="margin-right: 16px" class="btn btn-success" type="submit">Update</button>
+          <button class="btn btn-danger" (click)="cancel()">Cancel</button>
+          <br /><br />
+        </div>
+      </form>
+    </div>
+  </div>
+</form>
